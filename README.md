@@ -51,12 +51,12 @@ https://github.com/vanioinformatika/easydao-demo-database-model
 
 If you are using NetBeans, then **open easydao-project.** 
 
-![easydao-logic](https://github.com/adam-p/markdown-here/raw/master/easydao-logic.png "EasyDao Logic")
+![easydao-logic](../easydao-logic.png "EasyDao Logic")
 
 Download as PDF:
 [EasyDao logic](../easydao-logic.pdf)
 
-![easydao-workflow](https://github.com/adam-p/markdown-here/raw/master/easydao-workflow.png "EasyDao Workflow")
+![easydao-workflow](../easydao-workflow.png "EasyDao Workflow")
 
 Download as PDF:
 [EasyDao logic](../easydao-workflow.pdf)

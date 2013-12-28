@@ -51,14 +51,37 @@ https://github.com/vanioinformatika/easydao-demo-database-model
 
 If you are using NetBeans, then **open easydao-project.** 
 
-![easydao-logic](../master/easydao-logic.png "EasyDao Logic")
+# EasyDao logic
+
+> This section describes EasyDao logic. This means how to create your projects and database, and what conventions are.
+
+There are four logic layer:
+1. **Database:** this is your real database. It is important that table and field names are following naming conventions, e.g: if you prefixes tables (CUS_CUSTOMER), than all table must have prefix. Your table must have one primary key. **I advice that, do not use composite primary keys, but always use one primary key.** See: http://stackoverflow.com/questions/1383062/composite-primary-key 
+1. **Dao and Model layer:** these classes generated from the database, and you never modify with hands. Dao classes directly reaches tables of database. The dao classes based on Spring Framework JdbcTemplate.
+1. **DaoExt and DaoComp layer:** there are codes that was made by developers.
+1. **Service layer:** Service classes contains Spring @Transactional annotation, and they are using Dao, DaoExt and DaoComp classes.
+
+> DaoExt classes extends Dao classes, and contains several unique methods **for exactly one table.**
+
+
+> DaoComp classes not related to one table. It is **using several tables with one complex query.**
+
+
+> **Service layer never contains SQL codes!** It is using Dao classes: Dao, DaoExt and DaoComp.
+
+**Automatic generated code, you never modify:** Model and Dao classes.
+
+**DaoExt, DaoComp, Service depends on bussiness logic and created by developers.** 
+
+You can see this one on the next image and PDF. 
 
 Download as PDF:
 [EasyDao logic](../master/easydao-logic.pdf)
-
-![easydao-workflow](../master/easydao-workflow.png "EasyDao Workflow")
+![easydao-logic](../master/easydao-logic.png "EasyDao Logic")
 
 Download as PDF:
 [EasyDao logic](../master/easydao-workflow.pdf)
+![easydao-workflow](../master/easydao-workflow.png "EasyDao Workflow")
+
 
 

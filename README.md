@@ -57,6 +57,7 @@ If you are using NetBeans, then **open easydao-project.**
 > This section describes EasyDao logic. This means how to create your projects and database, and what conventions are.
 
 There are four logic layer:
+
 1. **Database:** this is your real database. It is important that table and field names are following naming conventions, e.g: if you prefixes tables (CUS_CUSTOMER), than all table must have prefix. Your table must have one primary key. **I advice that, do not use composite primary keys, but always use one primary key.** See: http://stackoverflow.com/questions/1383062/composite-primary-key 
 1. **Dao and Model layer:** these classes generated from the database, and you never modify with hands. Dao classes directly reaches tables of database. The dao classes based on Spring Framework JdbcTemplate.
 1. **DaoExt and DaoComp layer:** there are codes that was made by developers.

@@ -10,7 +10,6 @@ EasyDao is a lightweight, fast and flexible model and dao code generator.
 * no heavyweight tools
 * no special knowledge
 * no cost
-
 * generate model as POJO
 * generate Dao for Spring Framework JdbcTemplate
 * CRUD Dao methods
@@ -27,6 +26,8 @@ EasyDao is a lightweight, fast and flexible model and dao code generator.
 * flexible
 * open source and free demo application
 * learning time is about 5 minutes
+
+EasyDao support Oracle 11 and PostgreSQL 9.
 
 > If you want to use it, then you need **easydao-maven-plugin** and **easydao-core**. You can see how to use it with demo applications: easydao-demo and easydao-demo-database-model. More information on GitHub page.
 

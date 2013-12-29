@@ -21,13 +21,13 @@ EasyDao is a lightweight, fast and flexible model and dao code generator.
 * open source and free with MIT licence
 * ultra fast code generation
 * you can use it from Jenkins
-* handling composite keys
+* handling composite primary keys
 * database design is convention over configuration
 * flexible
 * open source and free demo application
 * learning time is about 5 minutes
 
-EasyDao support Oracle 11 and PostgreSQL 9.
+EasyDao has tested on Oracle 10, 11 and PostgreSQL 9. Maybe it works with older Oracle and PostgreSQL.
 
 > If you want to use it, then you need **easydao-maven-plugin** and **easydao-core**. You can see how to use it with demo applications: easydao-demo and easydao-demo-database-model. More information on GitHub page.
 

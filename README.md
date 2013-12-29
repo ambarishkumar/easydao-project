@@ -10,6 +10,7 @@ EasyDao is a lightweight, fast and flexible model and dao code generator.
 * no heavyweight tools
 * no special knowledge
 * no cost
+* support old projects
 * generate model as POJO
 * generate Dao for Spring Framework JdbcTemplate
 * CRUD Dao methods
@@ -22,8 +23,10 @@ EasyDao is a lightweight, fast and flexible model and dao code generator.
 * ultra fast code generation
 * you can use it from Jenkins
 * handling composite primary keys
+* handling arrays
+* handling primary key sequences
 * database design is convention over configuration
-* flexible
+* flexible: replace the table and field names without changing database
 * open source and free demo application
 * learning time is about 5 minutes
 
